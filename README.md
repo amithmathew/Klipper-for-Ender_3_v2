@@ -182,6 +182,14 @@ For me the settings are:
 
 and you can also use this video [this video](https://www.youtube.com/watch?v=4PgOdES7n8Y)
 
+**APM** 
+From [[https://www.reddit.com/r/ender3v2/comments/p33ia6/do_i_need_to_calibrate_my_z_steps/]]
+The leadscrew of an Ender 3v2 is a 4-start thread with 8mm lead at 2mm pitch. So a full revolution of your leadscrew will move your Z axis by 8mm. 1/8th of a revolution would be 1mm.
+
+The motors are 1.8 degrees per step, 360/1.8 = 200 steps for a full revolution. They're being run with 1/16th micro-steps, so that's 3200 steps per revolution.
+
+To do 1/8th of a revolution (for 1mm Z movement), it would take 400 steps. Thus your Z steps should be 400 steps/mm.
+**/APM**
 
    ## Screw Measurement
 
